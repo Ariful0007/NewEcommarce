@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "126844328263",
+    "firebase_url": "https://rc-online-shopping-default-rtdb.firebaseio.com",
+    "project_id": "rc-online-shopping",
+    "storage_bucket": "rc-online-shopping.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126844328263:android:925d7d4b83f03d67319462",
+        "android_client_info": {
+          "package_name": "com.meass.newecommarce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126844328263-egru9qlvcuo57v0e9m9rdkk0ejpm2fs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtl7Awow15lCVKjPRuqO-IQIAOd3TA57Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126844328263-egru9qlvcuo57v0e9m9rdkk0ejpm2fs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126844328263:android:adbaa2606bf9a55c319462",
+        "android_client_info": {
+          "package_name": "com.meass.rjonlineshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126844328263-rt4eo05jq5vluc609t2g51hgsqsq1uoc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meass.rjonlineshopping",
+            "certificate_hash": "4a5e05bc5d86a0569c7154046e70fdd4c2565374"
+          }
+        },
+        {
+          "client_id": "126844328263-tile5j8pcn0knujl8a6b95grjg6o5fvg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.meass.rjonlineshopping",
+            "certificate_hash": "953d242986769e8560f8772aacc500a56e659f9f"
+          }
+        },
+        {
+          "client_id": "126844328263-egru9qlvcuo57v0e9m9rdkk0ejpm2fs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtl7Awow15lCVKjPRuqO-IQIAOd3TA57Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126844328263-egru9qlvcuo57v0e9m9rdkk0ejpm2fs3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.meass.newecommarce">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"></activity>
+        <activity
+            android:name=".E_home"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Image3"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Image2"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Image1"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Show_Bannar"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Add_bannar"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".My_Orders"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Order_Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".OrderTrackActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Order_places"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Step_2"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".My_Products"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Main_Dash"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Login2"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Add_Image"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+        <activity
+            android:name=".Second_Splash"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/OriginalThemeNoActionBar" />
+    </application>
+
+</manifest>

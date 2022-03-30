@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Admin EXpress</string>
+
+
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="login_now">Login Now</string>
+
+    <!--Navigation drawer items-->
+    <string name="feedback">Feedback</string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="registermail1">\n This is Shashank Sinha , CEO of Mini Bazaar ! \n\nWelcome onboard with us on behalf of our team !\n
+    We promise to provide unforgettable shopping experience to you in future ! \n\n
+    So What are you waiting for , start shopping and get best of our products right at your doorstep !
+    \n\n
+    We are happy to help you ! In case of any query contact us at our handles mentioned below !\n\n
+    Phone : +91-9650908741\n
+    Email : sinhashashank.98@gmail.com\n
+    Address : B-5/384, Yamuna Vihar, Delhi ( 110053 )</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+</resources>

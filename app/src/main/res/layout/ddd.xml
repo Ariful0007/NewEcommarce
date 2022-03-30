@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".E_home">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            app:titleTextColor="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="left"
+            style="@style/CustomTheme"
+            android:background="@color/white">
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarwrap">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/slider"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:auto_cycle="true"
+                app:placeholder="@drawable/loading"
+                app:error_image="@drawable/error"
+                app:delay="0"
+                app:period="4000"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="cardsActivity"
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/visitingcards"
+                                style="@style/homegridimage"
+                                android:src="@drawable/herbaltreatment" />
+
+                            <TextView
+                                android:layout_below="@id/visitingcards"
+                                android:text="Beauty And \nHealth"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="tshirtActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/tshirts"
+                                style="@style/homegridimage"
+                                android:src="@drawable/teddybear" />
+
+                            <TextView
+                                android:layout_below="@id/tshirts"
+                                android:text="Toys And \nBaby Product"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="bagsActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bags"
+                                android:src="@drawable/bababab"
+                                style="@style/homegridimage" />
+
+                            <TextView
+                                android:layout_below="@id/bags"
+                                android:text="Grocery"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="stationaryAcitivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/Stationary"
+                                style="@style/homegridimage"
+                                android:src="@drawable/lifestyle" />
+
+                            <TextView
+                                android:layout_below="@id/Stationary"
+                                android:text="Home And \nLifestyle"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="station1aryAcitivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bag2s"
+                                android:src="@drawable/girl"
+                                style="@style/homegridimage" />
+
+                            <TextView
+                                android:layout_below="@id/bag2s"
+                                android:text="Ledies Product"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="Statiohnarky">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/Stationarky"
+                                style="@style/homegridimage"
+                                android:src="@drawable/clock" />
+
+                            <TextView
+                                android:layout_below="@id/Stationarky"
+                                android:text="Watch and \nOthers"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="bagfid">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bag2ffs"
+                                android:src="@drawable/devices"
+                                style="@style/homegridimage" />
+
+                            <TextView
+                                android:layout_below="@id/bag2ffs"
+                                android:text="Electronics\nDevices"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="Sftathhhionarky">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/Sftationarky"
+                                style="@style/homegridimage"
+                                android:src="@drawable/more" />
+
+                            <TextView
+                                android:layout_below="@id/Sftationarky"
+                                android:text="Others\nProducts"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                //men
+                <LinearLayout
+                    android:layout_marginBottom="50dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="bagfid_fucking">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/bag2ffs1"
+                                android:src="@drawable/owner"
+                                style="@style/homegridimage" />
+
+                            <TextView
+                                android:layout_below="@id/bag2ffs1"
+                                android:text="Man\nProducts"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="Sftathhhionarky_bags">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/Sftationarky11"
+                                style="@style/homegridimage"
+                                android:src="@drawable/handbag" />
+
+                            <TextView
+                                android:layout_below="@id/Sftationarky11"
+                                android:text="Handbags"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

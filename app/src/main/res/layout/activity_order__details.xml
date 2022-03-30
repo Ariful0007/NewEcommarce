@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#cfd8dc"
+    android:id="@+id/profile_activity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Order_Details">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/white"
+        android:id="@+id/profile_toolbar"
+        app:titleTextColor="@color/toolbar"
+        android:backgroundTint="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+<ScrollView
+    android:layout_below="@id/profile_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_below="@id/profile_toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:id="@+id/reee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- A CardView that contains a TextView -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginBottom="4dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2">
+
+                        <ImageView
+                            android:id="@+id/cardimage"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/visitingcard" />
+
+
+                    </RelativeLayout>
+
+                    <View android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_width_small"
+                        android:background="@color/grey_light"
+                        android:layout_marginTop="8dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"/>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight=".8">
+
+                        <TextView
+                            android:id="@+id/cardcategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp"
+                            android:textColor="#424242"
+                            android:padding="5dp"
+                            android:text="Product"
+                            android:layout_weight="0.5"/>
+
+
+                        <TextView
+                            android:id="@+id/cardprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="right"
+                            android:textColor="#424242"
+                            android:layout_marginRight="10dp"
+                            android:textSize="15sp"
+                            android:padding="5dp"
+                            android:text="Price"
+                            android:layout_weight="0.5"/>
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@id/reee"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:id="@+id/reee1"
+            >
+            <TextView
+                android:id="@+id/login_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/josefinsans_semibold"
+                android:text="Order Details"
+                android:textColor="#6177FC"
+                android:textSize="26sp"
+                android:layout_centerInParent="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/login_image" />
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_below="@id/reee1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_below="@id/profile_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:inputType="text"
+                        android:id="@+id/product_name"
+                        android:background="@drawable/border"
+
+                        android:hint="Enter Product Name "
+
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textStyle="normal"
+                        android:layout_centerVertical="true"
+                        ></TextView>
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <LinearLayout
+                            android:layout_margin="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            >
+                            <androidx.core.widget.NestedScrollView
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/border"
+                                android:layout_height="50dp">
+
+                                <TextView
+                                    android:gravity="start"
+                                    android:hint="Product Details"
+                                    android:inputType="text"
+                                    android:id="@+id/product_des"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="250dp"
+
+                                    android:fontFamily="@font/circular_std_book"
+
+                                    android:textAlignment="textStart"
+                                    android:textSize="18sp"
+                                    android:textColor="@color/black"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+                            </androidx.core.widget.NestedScrollView>
+                        </LinearLayout>
+                    </ScrollView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:layout_margin="10dp"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/porduct_price"
+                        android:background="@drawable/border"
+
+                        android:hint="Enter Product Price "
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textStyle="normal"
+                        android:layout_centerVertical="true"
+                        ></TextView>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:id="@+id/phone"
+                        android:layout_margin="10dp"
+                        android:inputType="phone"
+                        android:background="@drawable/border"
+
+                        android:hint="Enter Phone Number  "
+
+                        android:gravity="center_vertical"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="false"
+                        android:textStyle="normal"
+                        android:layout_centerVertical="true"
+                        ></TextView>
+                    <Button
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:text="Order Conform"
+                        android:id="@+id/add_product"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:background="@color/toolbar"
+                        ></Button>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</ScrollView>
+</RelativeLayout>
